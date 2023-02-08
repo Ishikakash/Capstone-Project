@@ -95,7 +95,7 @@ function App() {
       <Navbar></Navbar>
       <div className="addTask">
         <h1><BsFillCalendarPlusFill></BsFillCalendarPlusFill> Add ToDo:</h1>
-        <ul className="task-options">
+        <ul className="task-option">
           <li>
             <label>Task name:</label>
             <input type="text"
