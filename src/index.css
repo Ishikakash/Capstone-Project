@@ -146,6 +146,10 @@ code {
   cursor: pointer;
 }
 
+.addTask .task-options label{
+  color: red;
+}
+
 .tasks_list .task{
   position: relative;
   border: 1px solid var(--color);
@@ -223,7 +227,7 @@ code {
 }
 
 .tasks_list .task .small-text{
-  color: var(--color);
+  color: red;
   font-weight: 700;
   margin-top: 10px;
 }
