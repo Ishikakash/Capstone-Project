@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
 :root{
-  --color: #4f4fe1;
+  --color: rgb(76, 45, 87);
   --width: 700px;
 }
 
@@ -9,7 +9,7 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(240, 140, 140);
+  background: rgb(86, 69, 138);
 }
 
 code {
