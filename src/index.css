@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+:root{
+  --color: #4f4fe1;
+  --width: 700px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(240, 140, 140);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar{
+  position: relative;
+  display: grid;
+  margin: 10px auto;
+  max-width: var(--width);
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow:
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.navbar:before{
+  content: '';
+  
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  border-radius: 10px;
+  
+}
+
+.navbar ul h1{
+  text-align: center;
+  text-decoration: overline;
+  text-decoration-color: red;
+}
+
+
+.tasks_list{
+  position: relative;
+  margin: 10px auto;
+  max-width: var(--width);
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow:
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.tasks_list:before{
+  content: '';
+  background: var(--color);
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.addTask{
+  position: relative;
+  margin: 30px auto;
+  max-width: var(--width);
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow:
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.addTask:before{
+  content: '';
+  background: var(--color);
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.addTask h1{
+  margin: 10px 15px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+.addTask h1 svg{
+  color: var(--color);
+  font-size: 24px;
+}
+
+.addTask label,
+.addTask button,
+.addTask input{
+  display: block;
+}
+
+.addTask .task-options{
+  margin: 10px 0px;
+}
+
+.addTask .task-options li{
+  list-style: none;
+  margin: 10px 0px;
+}
+
+.addTask .task-options input[type="text"], .addTask .task-options textarea{
+  outline: none;
+  border: 1px solid var(--color);
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: text;
+  padding: 5px 15px;
+  max-width: 400px;
+  max-height: 200px;
+}
+
+.addTask .task-options button{
+  background: var(--color);
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tasks_list .task{
+  position: relative;
+  border: 1px solid var(--color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 25px 10px;
+  padding: 5px 25px;
+  max-width: 250px;
+  vertical-align: top;
+	-webkit-flex: 1 5 auto;
+	-moz-flex: 1 5 auto;
+	flex: 1 5 auto;
+	align-self: auto;
+}
+
+.tasks_list .task input[type="text"], .tasks_list .task textarea{
+  outline: none;
+  border: 1px solid var(--color);
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: text;
+  padding: 5px 15px;
+  max-width: 150px;
+  max-height: 100px;
+  margin: 5px 0px;
+}
+
+.tasks_list .container{
+  margin: 10px 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	justify-content:center;
+	-webkit-align-items: center;
+	align-items:center;
+	-webkit-align-content: center;
+	align-content:center;
+}
+
+.tasks_list h1{
+  margin: 10px 15px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+.tasks_list h1 svg{
+  color: var(--color);
+  font-size: 24px;
+}
+
+.tasks_list .task h2{
+  word-wrap: break-word;
+  margin: 0;
+}
+
+.tasks_list .task p{
+  margin: 0;
+}
+
+.tasks_list .task button{
+  background: var(--color);
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+.tasks_list .task .small-text{
+  color: var(--color);
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.tasks_list .task .task-content{
+  margin: 25px 10px;
+  font-style: italic;
+  line-height: 100%;
+  word-wrap: break-word;
+}
+
+.tasks_list .task .completed{
+  background: var(--color);
+  position: absolute;
+  top: -21px;
+  left: -1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 2;
+}
+
+.tasks_list .task .completed input{
+  display: none;
+}
+
+.tasks_list .task .completed label{
+  cursor: pointer;
+}
+
+.tasks_list .task .completed label span{
+  font-weight: 900;
+}
+
+.tasks_list .task .completed label .todo{
+  color: rgb(252, 255, 66);
+}
+
+.tasks_list .task .completed label .complete{
+  color: rgb(69, 240, 35);
+}
+
+.task-newcontent{
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.edit-btn{
+  background: rgb(211, 76, 76) !important;
+}
+
+.delete-btn{
+  background: rgb(211, 76, 76) !important;
+}
