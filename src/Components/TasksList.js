@@ -25,7 +25,7 @@ const TasksList = ({data}) => {
           if(task.token === getStorage())
             return (
               <div className="task" key={task.id}>
-                <p className="small-text">Heading:</p>
+                <p className="smallText">Heading:</p>
                 {(!edit || task.id !== editId ) && 
                 <h2 id={"name-" + task.id}>{
                   realName === "" ? task.name : (edit && task.id === editId ? realName : task.name)}
